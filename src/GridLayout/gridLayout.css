@@ -1,0 +1,20 @@
+.output{
+    height: 50px;
+    width: 300px;
+    gap: 20px;
+    border: 1px solid rgb(161, 161, 74);
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.grid{
+    max-width: 20rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    }
+    .card{
+        cursor: pointer;
+        background: rgb(226, 226, 226);
+        padding: 18px;
+        border: 1px solid rgb(97, 97, 97);
+    }
