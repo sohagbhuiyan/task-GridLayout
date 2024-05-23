@@ -8,16 +8,19 @@ const GridLayout = () => {
     alphabet.push(String.fromCharCode(i));
   }
 const handleClick=(letter)=>{
-    setClickLetter(letter);
+    setClickLetter((prevletter)=>[...prevletter,letter]);
 }
+
   return (
     <>
-      <div className="output" >{... clickletter}</div>
+      <div className="output" >{clickletter} </div>
+      <button>Clear</button>
       <div className="grid">
         {alphabet.map((letter) => (
           <div key={letter} className="card"  onClick={()=> handleClick(letter)} >{letter}</div>
         ))}
       </div>
+
     </>
   );
 };

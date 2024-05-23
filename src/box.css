@@ -1,4 +1,4 @@
-.container{
+/* .container{
   padding: 5px;
   display: flex;
   gap:20px;
@@ -21,4 +21,54 @@
   
   .split.vertical .container {
     flex-direction: column;
-  }
+  } */
+/* src/box.css */
+/* .container {
+  display: flex;
+  flex-direction: column;
+} */
+/* 
+.container.horizontal {
+  flex-direction: row;
+}
+
+.split {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  border: 1px solid #ddd;
+} */
+
+/* .split.vertical {
+  flex-direction: column;
+} */
+.parent-box{
+  display: flex;
+  border: 0.2px solid rgb(94, 94, 94);
+  margin: 1px;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.3s;
+}
+
+.box:hover {
+  background-color: #e0e0e0;
+}
+
+.root-box{
+
+  display: inline-block;
+  border: rgb(168, 168, 168) 0.2px solid;
+}
+
+
